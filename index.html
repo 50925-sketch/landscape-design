@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website for a Landscape Design Company</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="checkbox" id="theme-toggle" class="sr-only">
+  <input type="checkbox" id="menu-toggle" class="sr-only">
+
+  <header class="site-header">
+    <a class="logo" href="#top">GreenForm</a>
+    <label for="menu-toggle" class="burger" aria-label="Menu"><span></span></label>
+    <nav class="nav" aria-label="Main">
+      <a href="#gardens">Completed Gardens</a>
+      <a href="#services">Services</a>
+      <a href="#price">Price List</a>
+      <a href="#contacts">Contacts</a>
+    </nav>
+    <a class="phone" href="tel:+77270000000">Dispatch: +7 727 000 00 00</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <h1>We Create Harmony of Nature on Your Site</h1>
+      <p>Design, planting and care of parks, gardens and private territories.</p>
+      <a class="cta" href="#contacts">Calculate Project Cost</a>
+    </section>
+
+    <section id="gardens" class="cases">
+      <h2>Completed Gardens</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="ba"><span class="before">Before</span><span class="after">After</span></div>
+          <h3>Park Ensemble</h3>
+          <p>Area: 2.5 acres</p>
+          <p>Style: Landscape (English)</p>
+        </article>
+        <article class="card">
+          <div class="ba"><span class="before">Before</span><span class="after">After</span></div>
+          <h3>Family Garden</h3>
+          <p>Area: 0.8 acres</p>
+          <p>Style: Minimalism</p>
+        </article>
+        <article class="card">
+          <div class="ba"><span class="before">Before</span><span class="after">After</span></div>
+          <h3>Courtyard</h3>
+          <p>Area: 0.3 acres</p>
+          <p>Style: Japanese</p>
+        </article>
+        <article class="card">
+          <div class="ba"><span class="before">Before</span><span class="after">After</span></div>
+          <h3>Country Estate</h3>
+          <p>Area: 4 acres</p>
+          <p>Style: Regular (French)</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="services" class="info">
+      <h2>Services</h2>
+      <p>Landscape design, irrigation, lawns, planting, lighting and seasonal care.</p>
+    </section>
+
+    <section id="price" class="info">
+      <h2>Price List</h2>
+      <p>Design from 5 000 KZT per sotka; full project cost is calculated after measurement.</p>
+    </section>
+
+    <section id="contacts" class="contact">
+      <h2>Request a Specialist Visit</h2>
+      <form action="#" method="post">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required minlength="2">
+
+        <label for="phone">Contact Phone</label>
+        <input id="phone" name="phone" type="tel" pattern="[0-9+ ()-]{10,}" required>
+
+        <label for="place">Geographical Location of the Object</label>
+        <input id="place" name="place" type="text" required>
+
+        <label for="date">Calendar Date</label>
+        <input id="date" name="date" type="date" required>
+
+        <button type="submit">Call an Engineer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <section>
+      <h2>Knowledge Base</h2>
+      <a href="#">Watering and fertilizing</a>
+      <a href="#">Pruning trees and shrubs</a>
+      <a href="#">Lawn care</a>
+    </section>
+    <section>
+      <h2>Partner Nurseries</h2>
+      <a href="#">Green Valley Nursery</a>
+      <a href="#">Almaty Flora</a>
+    </section>
+    <section>
+      <h2>Legal</h2>
+      <p>&copy; 2026 GreenForm LLP. All rights reserved.</p>
+      <a href="#">Privacy Policy</a>
+    </section>
+    <label for="theme-toggle" class="theme-btn">Light / Dark theme</label>
+  </footer>
+</body>
+</html>
